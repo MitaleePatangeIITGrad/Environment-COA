@@ -6,6 +6,14 @@ sudo apt-get -y install apache2 git php5 php5-curl mysql-client curl php5-mysql
 
 sudo service apache2 reload
 
+cd /var/www/html
+
+sudo wget https://wordpress.org/latest.tar.gz
+sudo tar -xzf latest.tar.gz
+
+cd wordpress/
+mv wp-config-sample.php wp-config.php
+
 curl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt
 
 sudo php composer.phar require aws/aws-sdk-php &> /tmp/runcomposer.txt
