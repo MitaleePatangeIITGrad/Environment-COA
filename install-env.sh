@@ -6,13 +6,16 @@ sudo apt-get -y install apache2 git php5 php5-curl mysql-client curl php5-mysql
 
 sudo service apache2 reload
 
+sudo mv ../Environment-COA/wp-config.php /var/www/html/wp-config.php
+
 cd /var/www/html
 
 sudo wget https://wordpress.org/latest.tar.gz
 sudo tar -xzf latest.tar.gz
 
 cd wordpress/
-mv wp-config-sample.php wp-config.php
+
+sudo mv ../wp-config.php wp-config.php
 
 curl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt
 
