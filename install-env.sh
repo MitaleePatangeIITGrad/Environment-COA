@@ -6,7 +6,7 @@ sudo apt-get -y install apache2 git php5 php5-curl mysql-client curl php5-mysql
 
 sudo service apache2 reload
 
-sudo mv ../Environment-COA/wp-config.php /var/www/html/wp-config.php
+git clone https://github.com/MitPat/Environment-COA.git
 
 cd /var/www/html
 
@@ -15,7 +15,7 @@ sudo tar -xzf latest.tar.gz
 
 cd wordpress/
 
-sudo mv ../wp-config.php wp-config.php
+mv ./Environment-COA/wp-config.php wp-config.php
 
 curl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt
 

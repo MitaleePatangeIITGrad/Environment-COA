@@ -19,7 +19,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'coa-mysql-wordpress-db');	
+define('DB_NAME', 'wordpressdb');	
 
 /** MySQL database username */
 define('DB_USER', 'controller');
@@ -28,7 +28,7 @@ define('DB_USER', 'controller');
 define('DB_PASSWORD', 'ilovebunnies');
 
 /** MySQL hostname */
-define('DB_HOST', 'localhost');
+define('DB_HOST', 'coa-mysql-wordpress-db.cy5n3ihjigxi.us-east-1.rds.amazonaws.com');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');
