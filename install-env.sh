@@ -6,7 +6,7 @@ sudo apt-get -y install apache2 git php5 php5-curl mysql-client curl php5-mysql
 
 sudo service apache2 reload
 
-git clone https://github.com/MitPat/Environment-COA.git
+git clone https://github.com/MitaleePatangeIITGrad/Environment-COA.git
 
 cd /var/www/html
 
