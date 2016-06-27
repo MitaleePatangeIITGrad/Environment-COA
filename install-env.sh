@@ -13,9 +13,7 @@ cd /var/www/html
 sudo wget https://wordpress.org/latest.tar.gz
 sudo tar -xzf latest.tar.gz
 
-cd wordpress/
-
-mv ./Environment-COA/wp-config.php wp-config.php
+sudo mv ../../../Environment-COA/wp-config.php /var/www/html/wordpress/wp-config.php
 
 curl -sS https://getcomposer.org/installer | sudo php &> /tmp/getcomposer.txt
 
